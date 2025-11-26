@@ -1,6 +1,6 @@
-# 🧾 List Comprehension:Generates all even numbers between 200 and 300
+# 🧾Write a Python Program to read n elements in the list and separate  odd and even elements in the list using list comprehension
 ## 🎯 AIM:
-To write a Python class-based program that generates all even numbers between 200 and 300 using **list comprehension**, and stores them in a list.
+To write a Python class-based program that generates all odd and even numbers using **list comprehension**, and stores them in a list.
 
 ---
 
@@ -21,24 +21,22 @@ To write a Python class-based program that generates all even numbers between 20
 
 ## 💻 PROGRAM:
 ```
-class Program:
-    def __init__(self):
-        self.a = 200  # Lower limit
-        self.b = 2    # Step value
-        self.c = 300  # Upper limit
-
-    def display(self):
-        even_numbers = [i for i in range(self.a, self.c + 1, self.b) if i % 2 == 0]
-        print("Even numbers between 200 and 300:")
-        print(even_numbers)
-obj = Program()
-obj.display()
+L=[]
+n=int(input())
+for i in range(n):
+    x=int(input())
+    L.append(x) 
+ODD=[x for x in L if x%2!=0]
+EVEN=[x for x in L if x%2==0]
+print(L)
+print(ODD)
+print(EVEN)
 ```
 
 ## OUTPUT:
-```
-Even numbers between 200 and 300:
-[200, 202, 204, ..., 298, 300]
-```
+![image](https://github.com/user-attachments/assets/459fef8a-443a-4525-8bc2-cc7566c96f6b)
+
+
 ## RESULT:
-Hence Generated even numbers between 200 and 300 using list comprehension in a class
+
+Thus the program executed successfully
