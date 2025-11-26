@@ -34,46 +34,31 @@ To develop a Python class with functions to:
 ---
 
 ## 💻 PROGRAM:
+
+ADD CODE HERE
 ```
-class InsertionSorter:
-    def __init__(self):
-        self.lst = []
-
-    def create_list(self):
-        n = int(input("Enter the number of elements: "))
-        print("Enter the elements:")
-        for _ in range(n):
-            val = int(input())
-            self.lst.append(val)
-
-    def insertion_sort(self):
-        for i in range(1, len(self.lst)):
-            key = self.lst[i]
-            j = i - 1
-            while j >= 0 and key < self.lst[j]:
-                self.lst[j + 1] = self.lst[j]
-                j -= 1
-            self.lst[j + 1] = key
-
-    def print_list(self):
-        print("Sorted list:", self.lst)
-
-sorter = InsertionSorter()
-sorter.create_list()
-sorter.insertion_sort()
-sorter.print_list()
+  class Numbers:
+      def __init__(self, N=0):
+          self.N = int(input())
+      def create_list(self):
+          self.L=[]
+          for i in range(self.N):
+              x=int(input())
+              self.L.append(x)
+      def sorting(self):
+          for i in range(self.N):
+              mi=i
+              for j in range(i+1,self.N):
+                  if self.L[j]<self.L[mi]:
+                      mi=j
+              (self.L[i],self.L[mi])=(self.L[mi],self.L[i])
+      def print_List(self):
+          for i in range(self.N):
+              print(self.L[i])
 ```
-
 ## OUTPUT:
-```
-Enter the number of elements: 5
-Enter the elements:
-23
-12
-45
-8
-19
-Sorted list: [8, 12, 19, 23, 45]
-````
+
+![image](https://github.com/user-attachments/assets/fe7e5e5a-3200-4fe9-b9ac-5f7e482b4eab)
+
 ## RESULT:
- Hence Insertion Sort using a Python class is done.
+Thus, the program has been execueted successfully.
